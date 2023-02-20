@@ -11,9 +11,7 @@ jobs:
 
       - name: download
         run: |
-          git config --local user.email ${{ secrets.EMAIL }}
-          git config --local user.name "迷渡"
-          git remote set-url origin https://${{ github.actor }}:${{ secrets.TOKEN }}@github.com/${{ github.repository }}
+          git remote set-url origin https://github.com/${{ github.repository }}
           git pull --rebase
           chmod +x ./bin/yt-dlp
           ./bin/yt-dlp --config-locations config
