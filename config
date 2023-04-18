@@ -1,4 +1,3 @@
 --batch-file playlist.txt
---format 18
 --output downloads/%(title)s_%(id)s.%(ext)s
 --continue
